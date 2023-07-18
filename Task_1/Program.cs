@@ -9,14 +9,14 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 
 bool IsValidateNumber(int num) // Реализация функции проверки наличия негативного числа
 {
-    if (num > 0)
-    {
-        return true;
-    }
-    else
+    if (num < 0)
     {
         Console.WriteLine("Need to be a positive number");
         return false;
+    }
+    else
+    {
+        return true;
     }
 }
 
